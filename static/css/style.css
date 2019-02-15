@@ -77,7 +77,7 @@ h6,
 }
 
 p {
-  margin: 3em 0;
+  margin: 1em 0;
 }
 
 * > p:first-child {
@@ -255,7 +255,7 @@ textarea {
   margin: 0 0 1.5em;
 }
 .main-content-area {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 /* =Post styling
@@ -488,7 +488,7 @@ article.grid iframe {
 /* =Custom Styles
 ----------------------------------------------- */
 #logo {
-  padding: 50px 0 45px 0;
+  padding: 15px 0 15px 0;
   text-align: center;
   border-bottom: 1px solid #dedede;
 }
@@ -1037,4 +1037,63 @@ p a{
 p img{
   display: block;
   margin: 0 auto;
+}
+
+
+/* Logo SVG Styles*/
+/* Main styles */
+
+.svg-text {
+  font: 5em/1 Open-Sans, Impact;
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 185s infinite linear;
+  animation: stroke 185s infinite linear;
+}
+
+.svg-text:nth-child(5n + 1) {
+  stroke: #bfd6f6;
+  -webkit-animation-delay: -37s;
+  animation-delay: -37s;
+}
+.svg-text:nth-child(5n + 2) {
+  stroke: #8dbdff;
+  -webkit-animation-delay: -74s;
+  animation-delay: -74s;
+}
+.svg-text:nth-child(5n + 3) {
+  stroke: #64a1f4;
+  -webkit-animation-delay: -111s;
+  animation-delay: -111s;
+}
+.svg-text:nth-child(5n + 4) {
+  stroke: #0e94ec;
+  -webkit-animation-delay: -148s;
+  animation-delay: -148s;
+}
+.svg-text:nth-child(5n + 5) {
+  stroke: #3b7dd8;
+  -webkit-animation-delay: -185s;
+  animation-delay: -185s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+
+svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
